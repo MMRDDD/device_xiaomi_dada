@@ -291,6 +291,8 @@ module = ExtractUtilsModule(
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
     check_elf=True,
+    # 独立固件由机身提供，不生成 radio 打包和 OTA 分区登记。
+    add_firmware_proprietary_file=False,
 )
 
 if __name__ == '__main__':
