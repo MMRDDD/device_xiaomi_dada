@@ -128,6 +128,7 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/libAncHumanPreviewBokeh.so',
         'odm/lib64/libMiEmojiEffect.so',
         'odm/lib64/libMiPhotoFilter.so',
+        'odm/lib64/libpendant_wrapper.so',
         'odm/lib64/libTrueSight.so',
         'odm/lib64/libwa_widelens_undistort.so',
     ): blob_fixup()
@@ -161,6 +162,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     (
         'odm/lib64/camx.device-impl.so',
+        'odm/lib64/camx.provider-impl.so',
         'odm/lib64/libmicamera_aidl_device.so',
         'odm/lib64/libmicamera_aidl_utils.so',
         'vendor/lib64/android.hardware.camera.common-V1-ndk_prebuilt.so',
@@ -209,6 +211,7 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/camera/plugins/com.xiaomi.plugin.filter.so',
         'odm/lib64/camera/plugins/com.xiaomi.plugin.skinbeautifierpreview.so',
         'odm/lib64/camera/plugins/com.xiaomi.plugin.tsskinbeautifier.so',
+        'odm/lib64/camera/plugins/com.xiaomi.plugin.watermarkV2.so',
         'odm/lib64/camera/zsl/com.xiaomi.zsl.aihighlight.so',
         'odm/lib64/camera/zsl/com.xiaomi.zsl.bokehrawhdr.so',
         'odm/lib64/camera/zsl/com.xiaomi.zsl.bokehsmartae.so',
