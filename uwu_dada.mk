@@ -27,8 +27,8 @@ PRODUCT_SYSTEM_NAME := dada
 PRODUCT_SYSTEM_DEVICE := dada
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="dada-user 15 AQ3A.250226.002 OS3.0.305.0.WOCEUXM release-keys" \
-    BuildFingerprint=Xiaomi/dada/dada:15/AQ3A.250226.002/OS3.0.305.0.WOCEUXM:user/release-keys \
+    BuildDesc="dada-user 17 CP2A.260605.016 OS4.0.4.0.XOCCNXM release-keys" \
+    BuildFingerprint=Xiaomi/dada/dada:17/CP2A.260605.016/OS4.0.4.0.XOCCNXM:user/release-keys \
     DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
