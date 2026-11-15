@@ -267,6 +267,18 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libultrahdr_prebuilt.so',
     ): blob_fixup()
         .replace_needed('libimage_io.so', 'libimage_io_prebuilt.so'),
+    # 两库将 stock 新增的 opaque 参数固定为 false，与 AOSP 五参数实现等价。
+    # 等长替换保留 ELF 偏移，仅调整导入符号。
+    (
+        'system_ext/lib64/libcamera_algoup_jni.xiaomi.so',
+        'system_ext/lib64/libcamera_mianode_jni.xiaomi.so',
+    ): blob_fixup()
+        .binary_regex_replace(
+            b'_ZN7android19lockImageFromBufferENS_2spINS_13GraphicBufferEEEj'
+            b'RKNS_4RectEiPNS_11CpuConsumer12LockedBufferEb\x00',
+            b'_ZN7android19lockImageFromBufferENS_2spINS_13GraphicBufferEEEj'
+            b'RKNS_4RectEiPNS_11CpuConsumer12LockedBufferE\x00\x00',
+        ),
     'product/priv-app/MiuiCamera/MiuiCamera.apk': blob_fixup()
         .apktool_patch('blob-patches/MiuiCamera'),
     'vendor/lib64/libcameraopt.so': blob_fixup()
