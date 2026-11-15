@@ -8,6 +8,7 @@ $(call inherit-product, device/xiaomi/sm8750-common/common.mk)
 
 # Camera
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries-xiaomi.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-xiaomi.txt \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-miuicamera.xml
 
 PRODUCT_PACKAGES += \
