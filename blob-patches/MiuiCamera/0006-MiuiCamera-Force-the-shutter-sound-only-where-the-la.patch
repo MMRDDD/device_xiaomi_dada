@@ -9,26 +9,26 @@ region or, without ro.miui.region, the language is Japanese or Korean.
 Ask the framework instead, which knows from the network whether the
 country requires the sound.
 ---
- smali_classes4/I7/c.smali | 43 ++-------------------------------------
+ smali_classes4/Te/b.smali | 43 ++-------------------------------------
  1 file changed, 2 insertions(+), 41 deletions(-)
 
-diff --git a/smali_classes4/I7/c.smali b/smali_classes4/I7/c.smali
-index 5f198bdc..f8b209a0 100644
---- a/smali_classes4/I7/c.smali
-+++ b/smali_classes4/I7/c.smali
-@@ -4570,51 +4570,12 @@
+diff --git a/smali_classes4/Te/b.smali b/smali_classes4/Te/b.smali
+index ce446dac..111bc7d5 100644
+--- a/smali_classes4/Te/b.smali
++++ b/smali_classes4/Te/b.smali
+@@ -1554,51 +1554,12 @@
  .end method
  
- .method public final x()Z
+ .method public final I()Z
 -    .locals 1
 -
--    invoke-virtual {p0}, LI7/c;->w()Z
+-    invoke-virtual {p0}, LTe/b;->H()Z
 -
 -    move-result p0
 -
 -    if-nez p0, :cond_1
 -
--    sget-object p0, Lv6/b;->c0:Ljava/lang/String;
+-    sget-object p0, LVa/c;->r0:Ljava/lang/String;
 -
 -    invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 -
@@ -36,7 +36,7 @@ index 5f198bdc..f8b209a0 100644
 -
 -    if-nez p0, :cond_0
 -
--    sget-object p0, Lv6/b;->c0:Ljava/lang/String;
+-    sget-object p0, LVa/c;->r0:Ljava/lang/String;
 -
 -    goto :goto_0
 -
@@ -50,7 +50,7 @@ index 5f198bdc..f8b209a0 100644
 -    move-result-object p0
 -
 -    :goto_0
--    sget-object v0, Lv6/b;->b0:Ljava/util/List;
+-    sget-object v0, LVa/c;->o0:Ljava/util/List;
 +    .locals 0
  
 -    invoke-interface {v0, p0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
