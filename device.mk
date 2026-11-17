@@ -41,6 +41,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayDada \
+    MiuiCameraIconOverlayDada \
     SettingsOverlayDada \
     SystemUIOverlayDada
 

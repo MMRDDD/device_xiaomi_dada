@@ -1,0 +1,67 @@
+From 713757117eedd797f0b7a6bfb43a7d1f0bf3803f Mon Sep 17 00:00:00 2001
+From: buildbot <noreply@github.com>
+Date: Tue, 17 Nov 2026 16:11:24 +0800
+Subject: [PATCH] MiuiCamera: Allow same-signature launcher icon overlays
+
+Expose mipmap/fmm to overlays signed with the camera certificate. Keep the stock resource IDs, values, file paths and encrypted drawable assets intact.
+---
+ resources.arsc | Bin 24971828 -> 24971848 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+diff --git a/resources.arsc b/resources.arsc
+index 0535094e9b4dfc24c0ac434cb6e18ddaf3e38ce8..2b4b07097aeb3b162740f5b3c7d9e757bf3b5d27 100644
+GIT binary patch
+delta 1488
+zcmdlo<qP+TDPOo*nHYE&JQ`VBSs7bdnOa$yTUl9JSy@|I*;-lITUj|;Svgx-xmsDd
+zTUmKpS$SJo`C3`|TUiBKSp{2Jg<4sKTUkX~Sw&k}#ada#TUjMqStVOprCM2~TUljV
+zS!G*U<yu+gTUixaSruDZm0DSqTUk|FSyfwE)mmBATUj+)Sv6Z(wOU!VTUm8lS#?`k
+z^;%i=TUiZSSq)oRjapfaTUkw7SxsA6&01N_TUjkySuI;xty)>FTUl*dS#4Wc?OIvw
+zTUi}iSshzhomyF)TUlLNSzTLM-C9}QTUk9?Sv^}>y;@nlTUmWtS$$hs{aRW5TUi5I
+zSp!>HgIZaGTUkR|SwmY{!&+IxTUjGoStDCnqgq*`TUldTSz}vS<62qcTUirYSrc1X
+zlUiAmTUk?DSyNkC(^^^6TUj$&Su<N%vsziRTUm2jS#w)i^IBQ+TUiTQSqocPi&|NW
+zTUkq5SxZ}4%UW5>TUjewSu0yvt6EvBTUl#bS!-Ka>sndsTUi@gSsPnfn_5|$TUlFL
+zSzB9K+ge%MTUk3=Svy-<yINVhTUmQrS$kVq`&wE1TUjTxvQBJeoz%)Yxs`QFE9=x&
+z)@iM*(_2|*w6e}@Wu4W^I=hv1PAlu&R@Ql~tn*u07qqf2Y-L^4%DT9fbxAAh(pJ`G
+zt*pyiSy!~Ou54vp)ylfMm32)k>)KY<b*-%HTUj@>vTkf;-PFpuxs`QGE9=%))@`k<
+z+gn+8w6gAOW!=@vy1SKiPb=%*R@Qy3tovJ8545r#Y-K&v%6hn!^++r0(N@-Dt*pme
+zSx>aGo@`}3)yjIhmGw+3>)BS;bFHlBTUjr(vR-Uuz0}Hjc`NIc*((^=v@cw7rG4Rw
+ztL+O{Tx(yr;(GhS6*t-!uDIF0aK)|mg)45iFI;h_ec_6`?F(1jYhSqHe*3}|584;5
+zc-X#h#iRCxD;~EmT=ArR;fkm23s*dAU%29V`@$73+83^P*}ibatM-K}Ubin?@uq#@
+zinr|xSG;RqxZ-{L!WAFd7q0l&zHr5-_Ju1xw=Z1rrG4Rwuk8z0d~090;(PnT6+hY+
+zuK3x$aK*3og)4ryFI@4bec_6~?F(1@YhSqHfA_)_jQtB&FoFms5Wx&0SU?0Th+qQ|
+z>>z>zL~w!#E)c;DB6vUqFNoj+5&R%R07M9a2q6$53?f88geZs*0}<jNLIOlcf(R)P
+zAq^sAK!hxakOL9&AVL8|D1rzj5TOhrR6v9(h)@F&>L5Y`L}-EtEfAp%B6L86E{M<r
+z5&9s)07Mvq2qO?-3?fWGgeizH0}<vR!U9BCf(R=RVGSZ|K!h!bumchHAi@DeID!Z#
+z5aA3WTtI{?h;RcD?jXVgM0kP-FA(7kB78uEFNp915&j?|07L|Wh#(LV3?f26L@0;|
+z0}<gMA_7E2f`}*(5e*_@KtwEvhyxMvAR+-oB!Y+}5RnWbQb0s1h)4qw=^!ElL}Y@9
+zED(_mB62`PE{Mnj5&0mZ07Mjmh$0YC3?fQEL@9_U0}<sQq5?!zf`}>*QO&r2;ffl@
+i>R3jD{jzMejN&XJtV{w7A`A=+0t^fcj0_+kSPuZ+yi(}^
+
+delta 1467
+zcmX>x<qP+gDPOo*nHYE&Od45RSs7bdnOa$yTUl9JSy@|I*;-lITUj|;Svgx-xmsDd
+zTUmKpS$SJo`C3`|TUiBKSp{2Jg<4sKTUkX~Sw&k}#ada#TUjMqStVOprCM2~TUljV
+zS!G*U<yu+gTUixaSruDZm0DSqTUk|FSyfwE)mmBATUj+)Sv6Z(wOU!VTUm8lS#?`k
+z^;%i=TUiZSSq)oRjapfaTUkw7SxsA6&01N_TUjkySuI;xty)>FTUl*dS#4Wc?OIvw
+zTUi}iSshzhomyF)TUlLNSzTLM-C9}QTUk9?Sv^}>y;@nlTUmWtS$$hs{aRW5TUi5I
+zSp!>HgIZaGTUkR|SwmY{!&+IxTUjGoStDCnqgq*`TUldTSz}vS<62qcTUirYSrc1X
+zlUiAmTUk?DSyNkC(^^^6TUj$&Su<N%vsziRTUm2jS#w)i^IBQ+TUiTQSqocPi&|NW
+zTUkq5SxZ}4%UW5>TUjewSu0yvt6EvBTUl#bS!-Ka>sndsTUi@gSsPnfn_5|$TUlFL
+zSzB9K+ge%MTUk3=Svy-<yINVhTUmQrS$kVq`&wE1TUjTxvQBJeoz%)Yxs`QFE9=x&
+z)@iM*(_2|*w6e}@Wu4W^I=hv1PAlu&R@Ql~tn*u07qqf2Y-L^4%DT9fbxAAh(pJ`G
+zt*pyiSy!~Ou54vp)ylfMm32)k>)KY<b*-%HTUj@>vTkf;-PFpuxs`QGE9=%))@`k<
+z+gn+8w6gAOW!=@vy1SKiPb=%*R@Qy3tovJ8545r#Y-K&v%6hn!^++r0(N@-Dt*pme
+zSx>aGo@`}3)yjIhmGw+3>)BS;bFHlBTUjr(vR-Uuz0}Hjc`NIc*((@lv@cw7rG4Rw
+ztL+O{Tx(yr;(GhS6*t-!uDIF0aK)|mg)45iFI;h_ec_6`?F(1jYhSqHe*3}|584;5
+zc-X#h#iRCxD;~EmT=ArR;fkm23s*dAU%29V`@$73+83^P*}ibatM-K}Ubin?@uq#@
+zinr|xSG;RqxZ-{L!WAFd7q0l&zHr5-_Ju1xw=Z1rrG4Rwuk8z0d~090;(PnT6+hY+
+zuK3x$aK*3og)4ryFI@4bec_6~?F(1@YhSqHfA_)_jQtB&FoFms5Wx&0SU?0Th+qQ|
+z>>z>zL~w!#E)c;DB6vUqFNoj+5&R%R07M9a2q6$53?f88geZs*0}<jNLIOlcf(R)P
+zAq^sAK!hxakOL9&AVL8|D1rzj5TOhrR6v9(h)@F&>L5Y`L}-EtEfAp%B6L86E{M<r
+z5&9s)07Mvq2qO?-3?fWGgeizH0}<vR!U9BCf(R=RVGSZ|K!h!bumchHAi@DeID!Z#
+z5aA3WTtI{?h;RcD?jXVgM0kP-FA(7kB78uEFNp915&j?|07L|Wh#(LV3?f26L@0;|
+z0}<gMA_7E2f`}*(5e*_@KtwEvhyxMvAR+-oB!Y+}5RnWbQb0s1h)4qw=^!ElL}Y@9
+zED(_mB62`PE{Mnj5&0mZ07Mjmh$0YC3?fQEL@9_U0}<sQq5?!zf`}>*QO&r2;ffl@
+P>R3jZ{jzMejN&W+Y)4Ve
+
+--
+2.56.1

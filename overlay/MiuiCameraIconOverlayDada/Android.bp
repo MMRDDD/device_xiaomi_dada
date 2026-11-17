@@ -1,0 +1,8 @@
+// SPDX-License-Identifier: Apache-2.0
+
+runtime_resource_overlay {
+    name: "MiuiCameraIconOverlayDada",
+    product_specific: true,
+    certificate: "platform",
+    sdk_version: "current",
+}
