@@ -9,3 +9,14 @@ prebuilt_etc {
     sub_dir: "init",
     device_specific: true,
 }
+
+cc_library_static {
+    name: "libinit_dada",
+    srcs: ["init_dada.cpp"],
+    recovery_available: true,
+    whole_static_libs: ["libbase"],
+    include_dirs: [
+        "system/libbase/include",
+        "system/core/init",
+    ],
+}

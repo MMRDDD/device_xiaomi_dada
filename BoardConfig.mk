@@ -21,6 +21,9 @@ TARGET_KERNEL_CONFIG += vendor/xiaomi/dada.config
 TARGET_KERNEL_ADDITIONAL_FLAGS += CONFIG_DADA_DTB=y
 TARGET_MERGE_DTBOS_WILDCARD := dada-sm8750-overlay
 
+# Init property overrides
+$(call soong_config_set,libinit,vendor_init_lib,//device/xiaomi/dada/init:libinit_dada)
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
