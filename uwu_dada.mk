@@ -17,6 +17,10 @@ $(call inherit-product, vendor/uwu/config/common.mk)
 # Inherit from dada device
 $(call inherit-product, device/xiaomi/dada/device.mk)
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 PRODUCT_NAME := uwu_dada
 PRODUCT_DEVICE := dada
 PRODUCT_MANUFACTURER := Xiaomi
