@@ -1,6 +1,9 @@
 # Camera
 persist.vendor.camera.privapp.list=com.android.camera
 
+# Display
+persist.sys.sf.color_mode=1
+
 # Fingerprint
 persist.vendor.qfp=true
 

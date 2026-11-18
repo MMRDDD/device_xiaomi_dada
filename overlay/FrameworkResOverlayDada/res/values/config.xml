@@ -4,6 +4,34 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <!-- 供应商模式编号取自两种面板的 QDCM 校准配置。 -->
+    <integer-array name="config_availableColorModes">
+        <item>0</item>
+        <item>1</item>
+        <item>256</item>
+        <item>267</item>
+        <item>268</item>
+        <item>275</item>
+    </integer-array>
+
+    <!-- 显式选择各模式的合成色彩空间，避免沿用上一个模式的强制设置。 -->
+    <integer-array name="config_displayCompositionColorModes">
+        <item>0</item>
+        <item>1</item>
+        <item>256</item>
+        <item>267</item>
+        <item>268</item>
+        <item>275</item>
+    </integer-array>
+    <integer-array name="config_displayCompositionColorSpaces">
+        <item>0</item>
+        <item>9</item>
+        <item>0</item>
+        <item>7</item>
+        <item>9</item>
+        <item>9</item>
+    </integer-array>
+
     <!-- Minimum screen brightness setting allowed by power manager. -->
     <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.000854597</item>
 
