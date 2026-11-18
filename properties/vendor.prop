@@ -3,3 +3,6 @@ persist.vendor.camera.privapp.list=com.android.camera
 
 # Fingerprint
 persist.vendor.qfp=true
+
+# Graphics
+ro.gfx.driver.0=com.qualcomm.qti.gpudrivers.sun.api35
